@@ -47,7 +47,7 @@ Abra o arquivo index.html em qualquer navegador web.
 
 O projeto não necessita de servidor ou instalação adicional.
 
-🎯 Objetivo do projeto
+## 🎯 Objetivo do projeto
 
 Aprender os conceitos básicos de Front-End
 
@@ -57,11 +57,11 @@ Entender a separação entre estrutura (HTML), estilo (CSS) e comportamento (Jav
 
 Desenvolver autonomia no desenvolvimento web
 
-📝 Observações
+## 📝 Observações
 
 Este projeto foi desenvolvido exclusivamente para fins educacionais, como parte do processo de aprendizado no curso da PrograMaria.
 
-👩‍💻 Autora
+## 👩‍💻 Autora
 
 Lizza Mendez
 GitHub: https://github.com/Lizzamendez
