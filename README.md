@@ -1,4 +1,6 @@
-# PrograMaria 💜 | Minha Primeira Página Web
+# PrograMaria 💜 
+
+Minha Primeira Página Web
 
 Este projeto foi desenvolvido como parte do curso **Front-End: Minha primeira página web!**, da **PrograMaria**, turma de **Novembro de 2025**.
 
