@@ -1,34 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   text-align:center;
-  font-family:Open Sans,sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color:#8A71C9;
   color:#ffffff;
-  margin: 0%;
-  margin: 0px 0px 30px 0px;
+  margin: 0;
+  padding-bottom: 50px;
 }
 
 h1{
-  font-size:60px;
-  font-weight:300;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 40px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 h2{
   color:#2a0074;
-  font-size:40px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 h3{
-font-size:22px;
-font-style:italic;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 30px;
 }
 
 p{
-  font-size:20px;
-  line-height: 1.5;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 img{
   width:100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  margin: 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  cursor: pointer;
 }
 
 .titulo-verde{
@@ -43,50 +66,124 @@ img{
   color:#ffe36d;
 }
 
-section{
-  width:60%;
-  margin:0 auto;
+/* Contenedores principales */
+main, footer {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-section section{
-  width:100%
+section{
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 40px;
 }
 
 ul{
   list-style-type:none;
-  line-height:2;
-  padding-left:0;
+  padding: 0;
+  margin: 0;
 }
 
 a{
   text-decoration: none;
   color:#99ffff;
   font-weight:700;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Estilos exclusivos para os links das 'Divas da Tecnologia' no rodapé */
+footer nav ul li a {
+  display: inline-block; /* Necessário para o transform funcionar */
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+}
+
+footer nav ul li a:hover, 
+footer nav ul li a:focus {
+  background-color: #99ffff;
+  color: #2a0074;
+  border-radius: 8px;
+  transform: scale(1.1); /* Aumenta o tamanho levemente */
+  outline: 2px solid #ffffff; /* Garante visibilidade extra para acessibilidade */
 }
 
 .principal{
   background-color:#FF6CB5;
-  height: 40px;
-  max-width:60%;
-  margin:0 auto;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  border-radius: 50px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.principal ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .principal ul li a{
   color:white;
-  text-decoration: underline;
-  line-height: normal;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
 }
 
-.principal li{
-  display: inline-block;
-  line-height: 2.5;
-  margin: 0 89px
+.principal ul li a:hover {
+  color: #2a0074;
 }
 
 button{
   background-color:#41f341;
-  border: 1px solid transparent;
-  padding: 2px 20px;
-  border-radius: 3px;
+  color: #2a0074;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  margin-top: 10px;
 }
 
+button:hover {
+  background-color: #32c232;
+  transform: scale(1.05);
+}
+
+/* Estilos del Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.2);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+label {
+  font-weight: bold;
+  align-self: flex-start;
+  margin-left: 10%;
+}
+
+input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
